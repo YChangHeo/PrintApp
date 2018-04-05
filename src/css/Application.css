@@ -1,0 +1,41 @@
+.button{
+    -fx-border-width: 0px 0px 0px 5px;
+    -fx-border-radius: 0px;
+    -fx-background-radius: 0px;
+    -fx-text-fill: #40e0d0;
+    -fx-background-color: #0000cd;
+    -fx-font-weight:700;
+    -fx-font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+}
+
+.button:focused{
+    -fx-border-width: 0px 0px 0px 0px;
+
+}
+.button:pressed{
+    -fx-text-fill: #0000cd;
+}
+.button:hover{
+    -fx-background-color: #929292;
+    -fx-text-fill: #0000cd;
+}
+
+.scroll-pane {
+    -fx-padding: 0;
+    -fx-background:#0000cd;
+}
+
+#mbtnUsrInfoBox{
+    -fx-background-color:#0000cd;
+    /*-fx-text-fill: white;*/
+}
+#mbtnUsrInfoBox:hover, #mbtnUsrInfoBox:focused{
+    -fx-background-color:#0000cd;
+}
+
+#acHead{
+    -fx-background-color:#0000cd;
+}
+#acDashBord{
+    -fx-background-color:#0000cd;
+}
