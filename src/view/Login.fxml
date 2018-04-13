@@ -3,31 +3,30 @@
 <?import com.jfoenix.controls.JFXButton?>
 <?import com.jfoenix.controls.JFXPasswordField?>
 <?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.text.Font?>
 
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
-   <center>
-      <AnchorPane style="-fx-background-color: #ffffff;" BorderPane.alignment="CENTER">
-         <children>
-            <JFXTextField layoutX="89.0" layoutY="85.0" prefHeight="28.0" prefWidth="422.5" promptText="Tên Người Dùng">
-               <font>
-                  <Font size="14.0" />
-               </font>
-            </JFXTextField>
-            <JFXPasswordField layoutX="89.0" layoutY="164.0" prefHeight="28.0" prefWidth="422.5" promptText="Mật Khẩu">
-               <font>
-                  <Font size="14.0" />
-               </font>
-            </JFXPasswordField>
-            <JFXButton buttonType="RAISED" layoutX="89.0" layoutY="240.0" prefHeight="36.0" prefWidth="422.25" style="-fx-background-color: #00a9f4;" text="Đăng Nhập" textFill="WHITE">
-               <font>
-                  <Font name="System Bold" size="16.0" />
-               </font>
-            </JFXButton>
-         </children>
-      </AnchorPane>
-   </center>
-</BorderPane>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="356.0" prefWidth="460.0" stylesheets="@../css/dark-theme.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <JFXTextField layoutX="53.0" layoutY="147.0" minWidth="400.0" prefHeight="35.0" prefWidth="400.0" promptText="User Name">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXPasswordField layoutX="53.0" layoutY="192.0" minWidth="400.0" prefHeight="35.0" prefWidth="400.0" promptText="Password">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </JFXPasswordField>
+      <JFXButton layoutX="95.0" layoutY="248.0" prefHeight="51.0" prefWidth="271.0" styleClass="Login-button" text="Login" textFill="#fff8f8">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <FontAwesomeIconView glyphName="LOCK" layoutX="211.0" layoutY="117.0" size="60" />
+      <FontAwesomeIconView glyphName="USER" layoutX="25.0" layoutY="173.0" size="25" />
+      <FontAwesomeIconView glyphName="KEY" layoutX="21.0" layoutY="218.0" size="25" />
+   </children>
+</AnchorPane>
