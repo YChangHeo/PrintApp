@@ -37,15 +37,15 @@ import javafx.scene.layout.StackPane;
 import javafx.scene.layout.VBox;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
-//import library.assistant.ui.callback.BookReturnCallback;
+import ui.callback.BookReturnCallback;
 import alert.AlertMaker;
 //import library.assistant.database.DataHelper;
 //import library.assistant.database.DatabaseHandler;
 //import library.assistant.ui.issuedlist.IssuedListController;
 //import library.assistant.util.LibraryAssistantUtil;
-//import ui.main.toolbar.ToolbarController;
+import ui.main.toolbar.ToolbarController;
 
-public class MainController implements Initializable {
+public class MainController implements Initializable, BookReturnCallback {
 
     private static final String BOOK_NOT_AVAILABLE = "Not Available";
     private static final String NO_SUCH_BOOK_AVAILABLE = "No Such Book Available";
@@ -127,8 +127,8 @@ public class MainController implements Initializable {
 
 //        databaseHandler = DatabaseHandler.getInstance();
 
-        initDrawer();
-        initGraphs();
+//        initDrawer();
+//        initGraphs();
     }
 
     @FXML
@@ -430,11 +430,11 @@ public class MainController implements Initializable {
 
     private void initDrawer() {
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/library/assistant/ui/main/toolbar/toolbar.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/ui/main/toolbar/toolbar.fxml"));
             VBox toolbar = loader.load();
             drawer.setSidePane(toolbar);
             ToolbarController controller = loader.getController();
-            controller.setBookReturnCallback(this);
+//            controller.setBookReturnCallback(this);
         } catch (IOException ex) {
             Logger.getLogger(MainController.class.getName()).log(Level.SEVERE, null, ex);
         }

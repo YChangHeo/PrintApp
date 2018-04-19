@@ -60,7 +60,7 @@ public class LoginController implements Initializable {
 
     void loadMain() {
         try {
-            Parent parent = FXMLLoader.load(getClass().getResource("/ui/login/main.fxml"));
+            Parent parent = FXMLLoader.load(getClass().getResource("/ui/main/main.fxml"));
             Stage stage = new Stage(StageStyle.DECORATED);
             stage.setTitle("Phần Mềm In Ấn");
             stage.setScene(new Scene(parent));
