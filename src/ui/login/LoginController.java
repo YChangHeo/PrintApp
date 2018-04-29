@@ -3,11 +3,7 @@ package ui.login;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
-
-//import library.assistant.ui.main.MainController;
-//import library.assistant.util.LibraryAssistantUtil;
 import org.apache.commons.codec.digest.DigestUtils;
-
 import com.jfoenix.controls.JFXPasswordField;
 import com.jfoenix.controls.JFXTextField;
 
